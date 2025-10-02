@@ -17,7 +17,7 @@ int main() {
         double t1 = omp_get_wtime();
         std::cout << "Threads : " << threads
                    << ", Time : " << t1 - t0
-                   << "sec , Sum : " << sum << std::endl;
+                   << "sec, Sum : " << sum << std::endl;
     }
     return 0;
 }

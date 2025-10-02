@@ -8,7 +8,7 @@ int main() {
     std::vector<int> data(N, 1); // make arr of all 1's
     long long total = 0;
 
-    #pragma omp parallel for reduction(+:sum)
+    #pragma omp parallel for reduction(+:total)
     for (int i = 0; i < N; ++i) {
         total += data[i];
     }
